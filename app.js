@@ -2,6 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable import/newline-after-import */
 import dotenv from 'dotenv';
+// import path from 'path';
 
 dotenv.config();
 
@@ -33,6 +34,7 @@ class App {
     this.app.use('/tokens/', tokenRoutes);
     this.app.use('/alunos/', alunoRoutes);
     this.app.use('/fotos/', fotoRoutes);
+    // this.app.use('/uploads', express.static(path.resolve(__dirname, '..', 'uploads')));
   }
 }
 
